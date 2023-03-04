@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LUCIEN</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo_tumo.png" />
+      <h1>Jchat</h1>
+      <img src="images/logo_campus.png" />
+    </header>
+    <body background=https://media.tenor.com/SLfrxyFo4RwAAAAd/handsome-jschlatt-jwatts.gif></body>
+
+    <div class="body-wrapper">
+      <div id="message-feed">
+        <div class="message">
+          <p class="message-time">17:04 • Anthony</p>
+          <p class="message-content">
+            There he is! There's my favorite white boy!
+          </p>
+        </div>
+        <div class="message message-me">
+          <p class="message-time">17:07 • Michel</p>
+          <p class="message-content">Super ! Je ramène à boire :)</p>
+        </div>
+        <div class="message message-me">
+          <p class="message-time">17:08 • Michel</p>
+          <p class="message-content">
+            Tu as de la charcut' à la maison ? Si tu veux je prend la terrine
+            que nous a préparé Nicolette, elle est délicieuse ! 😋
+          </p>
+        </div>
+        <div class="message">
+          <p class="message-time">17:12 • Anthony</p>
+          <p class="message-content">
+            Ah nice ça ! On va bien se remplir le bidou !
+          </p>
+        </div>
+      </div>
+      <form id="message-form" class="input-wrapper" autocomplete="off">
+        <div class="input-bar">
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Write something..."
+          />
+          <button type="submit" class="input-button">
+            <img id="message-send" src="images/send_button.png" />
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

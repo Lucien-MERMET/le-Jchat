@@ -1,0 +1,47 @@
+@import 'header.css';
+@import 'body.css';
+@import 'messages.css';
+@import 'input.css';
+
+:root {
+  --background-color: #000000;
+  --secondary-background-color: #000000;
+  --primary-color: #48945b;
+  --secondary-color: #00d9ff;
+  --primary-font-family: Arial, Helvetica, sans-serif;
+  --secondary-font-family: Consolas, monaco, monospace;
+  --font-color-white-primary: #f745e2;
+  --font-color-white-secondary: #ec6d6d;
+  --font-color-black-primary: #2a4364;
+  --font-color-black-secondary: #444444;
+  --shadow-color: rgb(0, 247, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000000;
+    --secondary-background-color: #d97979;
+    --font-color-black-primary: #8a67db;
+    --font-color-black-secondary: #518dee;
+    --shadow-color: rgb(88, 36, 36);
+  }
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: var(--primary-font-family);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--primary-font-color);
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+  border: inherit;
+  padding: inherit;
+}
